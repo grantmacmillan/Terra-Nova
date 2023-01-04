@@ -176,7 +176,7 @@ public class PlayerController : MonoBehaviour
         }
         fsm.Update();
         SpeedControl();
-        UpdateAnim();
+        //UpdateAnim();
 
         if (isGrounded)
             rb.drag = groundDrag;

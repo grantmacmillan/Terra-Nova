@@ -33,8 +33,8 @@ public class InputManager : MonoBehaviour
         playerInputActions = new PlayerInputActions();
         onGround = playerInputActions.OnGround;
         onMenu = playerInputActions.OnMenu;
-        pauseMenuObj = GameObject.FindGameObjectWithTag("PauseMenu");
-        pauseMenuObj.SetActive(false);
+        //pauseMenuObj = GameObject.FindGameObjectWithTag("PauseMenu");
+        //pauseMenuObj.SetActive(false);
         //onGround.Pause.performed += ctx => GameManager.Instance.Pause(pauseMenuObj);
         playerInput.SwitchCurrentActionMap("OnGround");
     }
