@@ -17,9 +17,9 @@ public class PlayerLook : MonoBehaviour
 
     public float ySensitivity = 30f;
 
-    void Start()
+    private void Start()
     {
-        camera = Camera.main;
+        //camera = Camera.main;
         Cursor.lockState = CursorLockMode.Locked;
     }
     public void Look(Vector2 input)
