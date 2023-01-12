@@ -305,11 +305,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 20x40 Building (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 9132295011393711775, guid: 098785c0a0576ed448171cdedf251c8e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098785c0a0576ed448171cdedf251c8e, type: 3}
 --- !u!1 &1465353937
@@ -351,11 +346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4686697366811549969, guid: 00edb8c1a542c844fafdc3b7df849415,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5887849371978594687, guid: 00edb8c1a542c844fafdc3b7df849415,
         type: 3}
       propertyPath: m_Name
@@ -469,11 +459,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5432304264337316420, guid: 4c3e35dca5a10dc45a0ca11442971787,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6619379209350382122, guid: 4c3e35dca5a10dc45a0ca11442971787,
         type: 3}
       propertyPath: m_Name
@@ -533,11 +518,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8605104462841797025, guid: 4c3e35dca5a10dc45a0ca11442971787,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c3e35dca5a10dc45a0ca11442971787, type: 3}
@@ -608,11 +588,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 20x40 Building (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 9132295011393711775, guid: 098785c0a0576ed448171cdedf251c8e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098785c0a0576ed448171cdedf251c8e, type: 3}
 --- !u!1001 &3181733022446676944
@@ -622,11 +597,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4686697366811549969, guid: 00edb8c1a542c844fafdc3b7df849415,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5887849371978594687, guid: 00edb8c1a542c844fafdc3b7df849415,
         type: 3}
       propertyPath: m_Name
@@ -824,11 +794,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 20x40 Building
-      objectReference: {fileID: 0}
-    - target: {fileID: 9132295011393711775, guid: 098785c0a0576ed448171cdedf251c8e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098785c0a0576ed448171cdedf251c8e, type: 3}
