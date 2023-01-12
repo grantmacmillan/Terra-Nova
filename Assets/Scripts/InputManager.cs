@@ -9,7 +9,7 @@ public class InputManager : MonoBehaviour
     public static InputManager Instance { get; private set; }
     private PlayerInput playerInput;
     private PlayerInputActions playerInputActions;
-    private PlayerInputActions.OnGroundActions onGround;
+    public PlayerInputActions.OnGroundActions onGround;
     private PlayerInputActions.OnMenuActions onMenu;
     private PlayerController playerController;
     private PlayerLook playerLook;
