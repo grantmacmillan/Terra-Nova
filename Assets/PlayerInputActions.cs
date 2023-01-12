@@ -749,6 +749,195 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""OnOverseer"",
+            ""id"": ""ce3bd8c2-2983-4cbf-a166-22e3ec63d5f2"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""42e2c508-7d44-4561-80ca-5a4526c9eb50"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""ZoomIn"",
+                    ""type"": ""Button"",
+                    ""id"": ""1853b81a-5324-4fd2-b595-e5bdd58757f6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ZoomOut"",
+                    ""type"": ""Value"",
+                    ""id"": ""a7c17ab9-b7d5-4689-9c20-87711a9c4ee0"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""fa4de16e-378e-4b89-88fd-f8996b11e1be"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Up"",
+                    ""id"": ""f54623e2-82e3-403c-991d-c8fb244f6f46"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Down"",
+                    ""id"": ""6a96ac09-b0e5-4a51-9594-cf0d124cfea2"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Left"",
+                    ""id"": ""19ada7b3-7d32-4e0b-bf9a-d8a8915f13ae"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Right"",
+                    ""id"": ""2d4f58a1-ab2d-4b3a-b9fc-86cebb0ced6b"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""LeftStick"",
+                    ""id"": ""be0dc806-4fdd-434e-b773-b98e9a768d27"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Up"",
+                    ""id"": ""1a2077da-b999-4432-886a-e30398d65bf9"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Down"",
+                    ""id"": ""59eab08e-8a15-411b-85f6-4c20142c79ff"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Left"",
+                    ""id"": ""1ced49e6-e20c-49c5-adba-a4e67646ea91"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Right"",
+                    ""id"": ""ff697ae8-83b0-4a36-a31e-d404765bb7c4"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8f574649-8a19-4d0d-b483-2f7183e74212"",
+                    ""path"": ""<Mouse>/scroll/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ZoomIn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4a5ec939-e154-45cd-aa80-69cd75af7a33"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ZoomIn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""253a1a2e-b4ca-40ca-b6b5-9c15ed61727f"",
+                    ""path"": ""<Mouse>/scroll/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ZoomOut"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b32a77f-c051-4fbf-ad32-21490ed73ba0"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ZoomOut"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -770,6 +959,11 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_OnMenu_Cancel = m_OnMenu.FindAction("Cancel", throwIfNotFound: true);
         m_OnMenu_TrackedDevicePosition = m_OnMenu.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_OnMenu_TrackedDeviceOrientation = m_OnMenu.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+        // OnOverseer
+        m_OnOverseer = asset.FindActionMap("OnOverseer", throwIfNotFound: true);
+        m_OnOverseer_Movement = m_OnOverseer.FindAction("Movement", throwIfNotFound: true);
+        m_OnOverseer_ZoomIn = m_OnOverseer.FindAction("ZoomIn", throwIfNotFound: true);
+        m_OnOverseer_ZoomOut = m_OnOverseer.FindAction("ZoomOut", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -979,6 +1173,55 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         }
     }
     public OnMenuActions @OnMenu => new OnMenuActions(this);
+
+    // OnOverseer
+    private readonly InputActionMap m_OnOverseer;
+    private IOnOverseerActions m_OnOverseerActionsCallbackInterface;
+    private readonly InputAction m_OnOverseer_Movement;
+    private readonly InputAction m_OnOverseer_ZoomIn;
+    private readonly InputAction m_OnOverseer_ZoomOut;
+    public struct OnOverseerActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public OnOverseerActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_OnOverseer_Movement;
+        public InputAction @ZoomIn => m_Wrapper.m_OnOverseer_ZoomIn;
+        public InputAction @ZoomOut => m_Wrapper.m_OnOverseer_ZoomOut;
+        public InputActionMap Get() { return m_Wrapper.m_OnOverseer; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(OnOverseerActions set) { return set.Get(); }
+        public void SetCallbacks(IOnOverseerActions instance)
+        {
+            if (m_Wrapper.m_OnOverseerActionsCallbackInterface != null)
+            {
+                @Movement.started -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnMovement;
+                @ZoomIn.started -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnZoomIn;
+                @ZoomIn.performed -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnZoomIn;
+                @ZoomIn.canceled -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnZoomIn;
+                @ZoomOut.started -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnZoomOut;
+                @ZoomOut.performed -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnZoomOut;
+                @ZoomOut.canceled -= m_Wrapper.m_OnOverseerActionsCallbackInterface.OnZoomOut;
+            }
+            m_Wrapper.m_OnOverseerActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+                @ZoomIn.started += instance.OnZoomIn;
+                @ZoomIn.performed += instance.OnZoomIn;
+                @ZoomIn.canceled += instance.OnZoomIn;
+                @ZoomOut.started += instance.OnZoomOut;
+                @ZoomOut.performed += instance.OnZoomOut;
+                @ZoomOut.canceled += instance.OnZoomOut;
+            }
+        }
+    }
+    public OnOverseerActions @OnOverseer => new OnOverseerActions(this);
     public interface IOnGroundActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -997,5 +1240,11 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnCancel(InputAction.CallbackContext context);
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+    }
+    public interface IOnOverseerActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnZoomIn(InputAction.CallbackContext context);
+        void OnZoomOut(InputAction.CallbackContext context);
     }
 }
