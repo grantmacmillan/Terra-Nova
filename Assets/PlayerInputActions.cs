@@ -98,6 +98,15 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""218d7d81-b515-4f93-91e4-040c00615c86"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -362,6 +371,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a9b24320-4c5c-4e70-83ba-1631d1399abf"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -952,6 +972,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_OnGround_Sprint = m_OnGround.FindAction("Sprint", throwIfNotFound: true);
         m_OnGround_Crouch = m_OnGround.FindAction("Crouch", throwIfNotFound: true);
         m_OnGround_Pause = m_OnGround.FindAction("Pause", throwIfNotFound: true);
+        m_OnGround_Interact = m_OnGround.FindAction("Interact", throwIfNotFound: true);
         // OnMenu
         m_OnMenu = asset.FindActionMap("OnMenu", throwIfNotFound: true);
         m_OnMenu_Navigate = m_OnMenu.FindAction("Navigate", throwIfNotFound: true);
@@ -1031,6 +1052,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_OnGround_Sprint;
     private readonly InputAction m_OnGround_Crouch;
     private readonly InputAction m_OnGround_Pause;
+    private readonly InputAction m_OnGround_Interact;
     public struct OnGroundActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -1043,6 +1065,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @Sprint => m_Wrapper.m_OnGround_Sprint;
         public InputAction @Crouch => m_Wrapper.m_OnGround_Crouch;
         public InputAction @Pause => m_Wrapper.m_OnGround_Pause;
+        public InputAction @Interact => m_Wrapper.m_OnGround_Interact;
         public InputActionMap Get() { return m_Wrapper.m_OnGround; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1076,6 +1099,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Pause.started -= m_Wrapper.m_OnGroundActionsCallbackInterface.OnPause;
                 @Pause.performed -= m_Wrapper.m_OnGroundActionsCallbackInterface.OnPause;
                 @Pause.canceled -= m_Wrapper.m_OnGroundActionsCallbackInterface.OnPause;
+                @Interact.started -= m_Wrapper.m_OnGroundActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_OnGroundActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_OnGroundActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_OnGroundActionsCallbackInterface = instance;
             if (instance != null)
@@ -1104,6 +1130,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Pause.started += instance.OnPause;
                 @Pause.performed += instance.OnPause;
                 @Pause.canceled += instance.OnPause;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -1232,6 +1261,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnSprint(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
     public interface IOnMenuActions
     {
